@@ -1539,6 +1539,76 @@
             { q: "ELEC pb (on the ECAM Control Pane l) PRESS<br>BAT 1 pb-sw and BAT 2 pb-sw OFF then ON<br>This action initiates a charging cycle of the batteries. ( ) s after setting all BAT pb-sw ON, check on the ELEC SD page that the current charge of the battery is ( ) ( A), and is ( ).", options: ["20 , above , 26 , increasing", "30 , above , 60 , decreasing", "10 , below , 60 , decreasing", "20 , below , 26 , increasing"], answer: "10 , below , 60 , decreasing" },
             { q: "Do not engage the autothrust on ground, as it may generate the AUTO FLT A/THR OFF warning at engine start.", options: ["True", "False"], answer: "True" },
             { q: "If the ECAM does not display the N WHEEL STEERG DISC memo, but the ground crew confirms that the tow pin is in the towing position, the flight crew", options: ["should stop the engine start", "should stop the pushback", "should not start the engine during pushback", "should inform the ground personnel"], answer: "should not start the engine during pushback" }
+        ],
+        hydraulics: [
+            { q: "Normal hydraulic power is provided by :", options: ["Engine driven pumps for all systems.", "Engine driven pumps for green and yellow,elec pump for blue, elec pump for yellow (ground operation only )", "Electric pumps for blue and yellow, engine driven pumps for green", "Engine driven pumps for green and blue electric pump for yellow."], answer: "Engine driven pumps for green and yellow,elec pump for blue, elec pump for yellow (ground operation only )" },
+            { q: "In flight,if the blue elec pump fails the blue system:", options: ["Is lost", "Can be recovered by the RAT", "Can be recovered by the PTU", "Both B and C"], answer: "Can be recovered by the RAT" },
+            { q: "With both engines stopped,how is it possible to pressurize the green system?", options: ["By the green engine pump.", "By the yellow engine pump and the PTU.", "By the yellow electric pump and the PTU."], answer: "By the yellow electric pump and the PTU." },
+            { q: "On ground the blue system is pressurized when :", options: ["The APU is running.", "One engine is running.", "Ext power is available."], answer: "One engine is running." },
+            { q: "Engine 2 drives :", options: ["The blue system.", "The green system.", "The yellow system pump and the green system via the PTU if the green system pump fails."], answer: "The yellow system pump and the green system via the PTU if the green system pump fails." },
+            { q: "The yellow system comprises:", options: ["One engine driven pump, one electric pump, one hand pump.", "One engine driven pump, two electric pumps.", "One engine driven pump, one hand and the RAT."], answer: "One engine driven pump, one electric pump, one hand pump." },
+            { q: "In flight , the blue hydraulic system can be supplied by :", options: ["The blue electrical pump and in case of emergency the RAT", "The engine driven pump", "The PTU (power transfer unit )", "It cannot be supplied"], answer: "The blue electrical pump and in case of emergency the RAT" },
+            { q: "The RAT is automatically extended in case of :", options: ["Loss of AC BUS 1 and BUS 2 or both engine fail.", "Blue hydraulic pump failure.", "Can only be extended manually.", "Blue pump delivery pressure dropping below 1750 PSI."], answer: "Loss of AC BUS 1 and BUS 2 or both engine fail." },
+            { q: "The priority valves operate in case of :", options: ["High hydraulic pressure in the green system..", "Low hydraulic pressure.", "High hydraulic pressure in the green and yellow systems."], answer: "Low hydraulic pressure." },
+            { q: "The fire shut off valves shut off :", options: ["The blue and yellow systems.", "The yellow and green systems.", "The green and blue systems."], answer: "The yellow and green systems." },
+            { q: "In case of blue elec pump failure,if the RAT MAN ON push button is pressed.", options: ["The blue hydraulic system pressurized by the RAT.", "The emergency GEN supplies electrical power.", "The blue hydraulic system is pressurized and the emergency GEN runs."], answer: "The blue hydraulic system pressurized by the RAT." },
+            { q: "The hydraulic reservoirs are pressurized :", options: ["By the cabin fans", "By the packs", "By the HP bleed air from engine 1"], answer: "By the HP bleed air from engine 1" },
+            { q: "In flight the hydraulic ENG 1 PUMP fault light comes on amber incase of : A resorvoir low level or a resorvoir overheat or a resorvoir low air press or a pump low press.", options: ["True", "False"], answer: "True" },
+            { q: "On the ground with the engine 1 is not running, the ENG1 pump fault light comes on amber due to green pump low pressure.", options: ["True", "False"], answer: "False" },
+            { q: "In case of reservoir overheat, the fault light of the faulty system stays on :", options: ["For 30 seconds", "Continuously", "As long as the overheat lasts"], answer: "As long as the overheat lasts" },
+            { q: "On ground and when none of the engines is running, with blue pump auto and AC power available, the blue pump is :", options: ["Automatically energized.", "Energized when the blue pump OVRD push button is pressed."], answer: "Energized when the blue pump OVRD push button is pressed." },
+            { q: "The blue system supplies hydraulic power to the operation of :", options: ["The flaps.", "The slats.", "The flaps and the slats."], answer: "The slats." },
+            { q: "The power transfer unit (PTU) is:", options: ["Reversible between blue and yellow systems.", "One way between green an yellow system.", "Revesible between green and yellow systems", "Reversible between all three systems."], answer: "Revesible between green and yellow systems" },
+            { q: "When extended in flight, the RAT pressurizes :", options: ["The green system.", "The yellow system and the green system via the PTU.", "The blue system."], answer: "The blue system." },
+            { q: "The yellow system includes operation of :", options: ["The left and right elevator.", "The left elevator only.", "The right elevator only."], answer: "The right elevator only." },
+            { q: "The yellow system may be powered by :", options: ["ENG 1 hydraulic pump.", "ENG 2 hydraulic pump or the yellow electric pump or the PTU.", "ENG 2 hydraulic pump or the yellow electric pump or the RAT."], answer: "ENG 2 hydraulic pump or the yellow electric pump or the PTU." },
+            { q: "The yellow system supplies hydraulic power to the operation of :", options: ["The flaps", "The flaps and slats.", "The slats."], answer: "The flaps" },
+            { q: "During the first engine start, the PTU is :", options: ["Automatically running.", "Tested.", "Inhibited."], answer: "Inhibited." },
+            { q: "The RAT can be restowed:", options: ["In flight.", "On ground only.", "On ground and in flight."], answer: "On ground only." },
+            { q: "In flight, the RAT can be extended:", options: ["Manually only.", "Manually or automatically.", "Automatically only."], answer: "Manually or automatically." },
+            { q: "In flight when the RAT is automatically extended:", options: ["The blue hydraulic system pressurized but the emergency gen does not run .", "The green hydraulic system is pressurized and the emergency GEN runs.", "The blue hydraulic system is pressurized and the emergency GEN runs."], answer: "The blue hydraulic system is pressurized and the emergency GEN runs." },
+            { q: "Is it possible to interchange hydraulic fluid from green to yellow or yellow to green system?", options: ["NO.", "YES through the PTU.", "YES in case of leakage."], answer: "NO." },
+            { q: "The fire shut off valve closes when:", options: ["The master switch is set to off.", "The fire push button is released out .", "Automatically if a fire is detected."], answer: "The fire push button is released out ." },
+            { q: "If the green system is lost, slat operation is :", options: ["Normal.", "Slow.", "Lost."], answer: "Slow." },
+            { q: "If the green system is lost , flap operation is :", options: ["Slow.", "Normal.", "Lost."], answer: "Slow." },
+            { q: "The green system operates:", options: ["Spoilers 3", "Spoilers 2 and 4", "Spoilers 1 and 5"], answer: "Spoilers 1 and 5" },
+            { q: "The green system operates:", options: ["The right elevator", "The left elevator.", "both"], answer: "The left elevator." },
+            { q: "The green system operates :", options: ["The left aileron.", "The right aileron.", "both"], answer: "both" },
+            { q: "The green system operates:", options: ["Reverser 1.", "Reverser 2.", "both"], answer: "Reverser 1." },
+            { q: "The yellow system operates:", options: ["Reverser 1.", "Reverser 2 .", "both"], answer: "Reverser 2 ." },
+            { q: "On ground with the blue elec pump push button set to auto , the circuit is energized if :", options: ["One battery is on AUTO", "Ground electrical power is on.", "One engine is running or the blue pump OVRD push button has been pressed."], answer: "One engine is running or the blue pump OVRD push button has been pressed." },
+            { q: "If the blue system is lost , slat operation is :", options: ["NORMAL.", "SLOW.", "LOST"], answer: "SLOW." },
+            { q: "If the blue system is lost, flap operation is :", options: ["NORMAL.", "SLOW.", "LOST."], answer: "NORMAL." },
+            { q: "The blue system operates:", options: ["Spoilers 2 and 4.", "Spoilers 3.", "Spoilers 1 and 5."], answer: "Spoilers 3." },
+            { q: "The RAT can be extended:", options: ["Automatically in case of loss of power to AC BUS 1 and AC BUS 2.", "Manually from the overhead panel.", "both"], answer: "both" },
+            { q: "The blue system operates :", options: ["The left aileron.", "The right aileron.", "both"], answer: "both" },
+            { q: "Can you operate a cargo door when no electrical power is available?", options: ["YES", "NO"], answer: "YES" },
+            { q: "With the yellow elec pump push button set to off and cargo door manual selector valve set to open or close , The PTU and the flight controls are:", options: ["Operative", "Inhibited"], answer: "Inhibited" },
+            { q: "If the yellow system is lost , slat operation is :", options: ["NORMAL.", "SLOW.", "LOST."], answer: "NORMAL." },
+            { q: "If the yellow system is lost , flap operation is :", options: ["NORMAL.", "SLOW.", "LOST."], answer: "SLOW." },
+            { q: "The engine 2 fire valve is between the yellow reservoir and :", options: ["The ENG 2 hydraulic pump .", "The yellow electric pump.", "The yellow hand pump."], answer: "The ENG 2 hydraulic pump ." },
+            { q: "The yellow system operates :", options: ["Spoilers 3", "Spoilers 2 and 4", "Spoilers 1 and 5"], answer: "Spoilers 2 and 4" },
+            { q: "In case of single hydraulic system low press :", options: ["The master warn light comes on.", "The master caution light comes on and the single chime sounds .", "There is no warning"], answer: "The master caution light comes on and the single chime sounds ." },
+            { q: "In case of RSVR LO AIR PR the hydraulic system affected:", options: ["Definitely lost.", "May be recovered after descending to a lower altitude."], answer: "May be recovered after descending to a lower altitude." },
+            { q: "With a single hydraulic system failure the flight control law is :", options: ["NORMAL.", "ALTERNATE.", "DIRECT."], answer: "NORMAL." },
+            { q: "With the green hydraulic system lost :", options: ["The landing gear extension is normal.", "The landing gear retraction is normal.", "The landing gear must be extended by gravity."], answer: "The landing gear must be extended by gravity." },
+            { q: "WITH THE GREEN HYDRAULIC SYSTEM LOST(PTU INOPERATIVE FOR MSN 1002-2164) :", options: ["THE NWS IS LOST.", "THE NWS IS OPERATIVE .", "THE NWS OPERATES IN ALTERNATE."], answer: "THE NWS IS LOST." },
+            { q: "WITH THE LOSS OF GREEN HYDRAULIC SYSTEM,THE BRAKING SYSTEM IS:", options: ["NORMAL", "ALTERNATE.", "LOST."], answer: "ALTERNATE." },
+            { q: "WITH THE LOSS OF GREEN HYDRAULIC SYSTEM, THE ANTI SKID IS (IF PTU IS OPERATIVE FOR MSN 1002-2164) :", options: ["LOST.", "LIMITED TO 2000 PSI BRAKE PRESSURE.", "OPERATIVE ON THE YELLOW HYDRAULIC SYSTEM."], answer: "OPERATIVE ON THE YELLOW HYDRAULIC SYSTEM." },
+            { q: "PTU AT AUTO, THE PTU AUTOMATICALLY RUNS :", options: ["IF THE BLUE HYDRAULIC SYSTEM IS LOST .", "WHEN DIFFERENTIAL PRESSURE BETWEEN GREEN AND YELLOW SYSTEM IS MORE THAN 500 PSI .", "AS SOON AS A DIFFERENTIAL PRESSURE BETWEEN GREEN AND YELLOW SYSTEM IS DETECTED."], answer: "WHEN DIFFERENTIAL PRESSURE BETWEEN GREEN AND YELLOW SYSTEM IS MORE THAN 500 PSI ." },
+            { q: "WITH ONLY THE GREEN HYDRAULIC SYSTEM REMAINING , THE AUTO PILOT FUNCTION IS :", options: ["AVAILABLE WITH AP1 .", "LOST.", "AVAILABLE WITH AP2."], answer: "LOST." },
+            { q: "WITH ONLY THE GREEN HYDRAULIC SYSTEM REMAINING , THE HORIZONTAL STABILIZER IS:", options: ["AVAILABLE .", "LOST."], answer: "AVAILABLE ." },
+            { q: "WITH GREEN AND YELLOW HYDRAULIC SYSTEM LOST,MANUAL PITCH TRIM IS :", options: ["AVAILABLE.", "UNUSABLE."], answer: "UNUSABLE." },
+            { q: "WITH ONLY THE GREEN HYDRAULIC SYSTEM REMAINING , THE AUTO BRAKE IS :", options: ["LOST.", "AVAILABLE.", "ALTERNATE."], answer: "AVAILABLE." },
+            { q: "WITH ONLY THE BLUE HYDRAULIC SYSTEM REMAINING :", options: ["THE BRAKING SYSTEM IS LOST.", "SEVEN FULL BRAKE APPLICATIONS ARE AVAILABLE.", "THE ANTISKID IS STILL AVAILABLE."], answer: "SEVEN FULL BRAKE APPLICATIONS ARE AVAILABLE." },
+            { q: "The aircraft has three, independent, continuously-operating hydraulic systems : GREEN, BLUE, and YELLOW.Each system is supplied from its own hydraulic reservoir. Normal system operating pressure is ....... PSI (..... PSI for RAT).", options: ["2000/3000", "3500/3000", "3000/2500", "2500/2000"], answer: "3000/2500" },
+            { q: "The...... deploys automatically in the event of both engine failure or a low level in the green and yellow or green and blue reservoirs.", options: ["RAT", "APU", "IDG", "FWC"], answer: "RAT" },
+            { q: "The green, blue and yellow systems each have a fire shut-off valve upstream of their engine- driven pump. The flight crew can close the valve by pushing the FIRE pushbutton.", options: ["True", "False"], answer: "True" },
+            { q: "The HSMU monitors the hydraulic system.It processes :", options: ["Control and monitoring of electric pumps.", "RAT extension", "LEAK MEASUREMENT VALVE control.", "All of the above"], answer: "All of the above" },
+            { q: "It is amber, and an associated caution appears on the ECAM, if the temperature of the returning hydraulic fluid, at the inlet to its reservoir, is above normal.", options: ["Reservoir LO PRESS", "HYD YELLOW PUMP LIGHT", "Reservoir OVHT", "PRESS WARNING"], answer: "Reservoir OVHT" },
+            { q: "Reservoir quantity This indication is in........ unless the fluid level goes below the warning level, in which case it becomes ......", options: ["Green/Blue", "Green/Amber", "Amber/Blue", "Blue/Green"], answer: "Green/Amber" },
+            { q: "HYD ELEC PUMP message appears in green when one of the three electric pumps is running (manually or automatic).", options: ["True", "False"], answer: "True" },
+            { q: "HYD SYS LO PR or G + Y SYS LOPR indications are....... When System pressure ≤ 1 450 PSI.", options: ["CRC and Master Caution Light", "Single Chime and Master Warning Light", "CRC and Master Warning Light", "None"], answer: "CRC and Master Caution Light" }
         ]
     };
 
@@ -1552,7 +1622,8 @@
         efis: "📺 EFIS", electrics: "⚡ Electrics", fmgs: "🧭 FMGS – Navigation",
         special_airspace: "🛩️ Special Airspace", initial_low_vis: "🌫️ Initial Low Vis.",
         pbn: "🛰️ PBN", performance: "📈 Performance", pneumatics: "💨 Pneumatics",
-        power_plant: "🔥 Power Plant", sop_english: "📘 SOP English", sop_normal: "📗 SOP – Normal Usuller"
+        power_plant: "🔥 Power Plant", sop_english: "📘 SOP English", sop_normal: "📗 SOP – Normal Usuller",
+        hydraulics: "🛢️ Hydraulics"
     };
 
     const mistakeTabNames = {
@@ -1563,11 +1634,11 @@
         air_condition: "AIR COND", auto_flight: "AUTO FLT", efis: "EFIS",
         electrics: "ELEC", fmgs: "FMGS", special_airspace: "SPC AIR",
         initial_low_vis: "LOW VIS", pbn: "PBN", performance: "PERF",
-        pneumatics: "PNEU", power_plant: "PWR PLNT", sop_english: "SOP ENG", sop_normal: "SOP NRM"
+        pneumatics: "PNEU", power_plant: "PWR PLNT", sop_english: "SOP ENG", sop_normal: "SOP NRM",hydraulics: "HYD"
     };
 
     const examGroups = {
-        exam12: ['apu', 'communication', 'doors', 'flight_controls', 'fire_protection', 'fuel', 'ice_and_rain', 'indication', 'landing_gear', 'lights', 'oxygen', 'instruments', 'efis'],
+        exam12: ['apu', 'communication', 'doors', 'flight_controls', 'fire_protection', 'fuel', 'ice_and_rain', 'indication', 'landing_gear', 'lights', 'oxygen', 'instruments', 'efis', 'hydraulics'],
         exam3: ['air_condition', 'auto_flight', 'electrics', 'fmgs', 'pneumatics', 'power_plant'],
         extra: ['special_airspace', 'initial_low_vis', 'pbn', 'performance', 'sop_english', 'sop_normal']
     };
